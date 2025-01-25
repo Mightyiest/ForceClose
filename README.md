@@ -21,8 +21,6 @@ This AutoHotkey (AHK) script allows you to forcefully close the currently active
 
 ---
 
-## Usage
-
 ### Prerequisites
 
 - **AutoHotkey**: Download and install AutoHotkey from [https://www.autohotkey.com/](https://www.autohotkey.com/).
@@ -50,3 +48,23 @@ This AutoHotkey (AHK) script allows you to forcefully close the currently active
     ; WinGet, ProcessName, ProcessName, ahk_id %ActiveWindowID%
     ; Run, taskkill /f /im %ProcessName%,, Hide
 return
+```
+### Notes 
+
+- **Graceful Close: The PostMessage method is safer and avoids potential data loss.
+- **Forceful Kill: The taskkill method is more aggressive and may result in unsaved data being lost.
+- **Admin Privileges: If using taskkill, ensure the script runs with administrative privileges if necessary.
+
+### Contributing
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request. Here’s how you can contribute:
+
+Fork the Repository: Create a fork of this repository.
+
+Make Your Changes: Implement your changes or fixes.
+
+Submit a Pull Request: Open a pull request with a detailed description of your changes.
+
+### Support
+If you find this script useful, consider giving it a ⭐️ on GitHub! For questions or issues, please open an issue in the repository.
+
+Enjoy using the script! 🚀
