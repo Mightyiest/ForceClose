@@ -51,9 +51,9 @@ return
 ```
 ### Notes 
 
-- **Graceful Close: The PostMessage method is safer and avoids potential data loss.
-- **Forceful Kill: The taskkill method is more aggressive and may result in unsaved data being lost.
-- **Admin Privileges: If using taskkill, ensure the script runs with administrative privileges if necessary.
+- **Graceful Close**: The PostMessage method is safer and avoids potential data loss.
+- **Forceful Kill**: The taskkill method is more aggressive and may result in unsaved data being lost.
+- **Admin Privileges**: If using taskkill, ensure the script runs with administrative privileges if necessary.
 
 ### Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request. Here’s how you can contribute:
