@@ -1,0 +1,9 @@
+^Delete::  ; Ctrl + Del hotkey
+    ; Get the ID of the active window
+    WinGet, ActiveWindowID, ID, A
+    ; Forcefully close the active window
+    PostMessage, 0x112, 0xF060,,, ahk_id %ActiveWindowID%  ; Send WM_SYSCOMMAND, SC_CLOSE
+    ; Alternatively, use the more aggressive method to kill the process
+    ; WinGet, ProcessName, ProcessName, ahk_id %ActiveWindowID%
+    ; Run, taskkill /f /im %ProcessName%,, Hide
+return
